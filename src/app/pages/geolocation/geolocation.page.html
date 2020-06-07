@@ -10,7 +10,7 @@
 
 <ion-content>
 
-  <button full (click) ="getGeoLocation()">Get Location</button>
+  <ion-button full (click) ="getCurrentCoordinates()">Get Location</ion-button>
 
   <div *ngIf = "location">
     <h3>Latitude : {{location.lat}}</h3>
