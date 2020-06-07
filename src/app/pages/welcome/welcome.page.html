@@ -1,0 +1,46 @@
+
+
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>Welcome To MyRepair</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="true"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <h1 style="color: blueviolet;">Welcome To Repair.com</h1> -->
+</ion-header>
+<ion-content>
+  
+  
+  <ion-grid>
+   <ion-row>
+
+    <img src="assets/images/car_service.png" style="width : 40% ; height : 40%" (click)="carService()" >
+
+    <img src="assets/images/bike_service.png" style="width : 50% ; height : 50%" ng-click="nextpage()" >
+   </ion-row>
+
+  </ion-grid>
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        
+        <ion-button [routerLink]="['/signup']" expand="block" color="primary">New User Please Register</ion-button>
+
+        <span class="divider line one-line"></span>
+        <br>
+
+        <span class="already"></span>
+        <br>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Already a user? Sign In</ion-button>
+        <br>
+
+        <ion-button [routerLink]="['/guest']" expand="block" color="danger">Guest user Skip Login</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

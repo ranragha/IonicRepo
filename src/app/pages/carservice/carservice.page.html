@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Car Service</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar type="text" debounce="500" (ionInput)="onInput($event)"></ion-searchbar>
+  <ion-list *ngIf="isShopAvailable">
+      <ion-item *ngFor="let shop of shops">{{ shop }}</ion-item>
+  </ion-list>
+
+</ion-content>

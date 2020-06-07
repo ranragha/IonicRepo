@@ -1,5 +1,7 @@
 {
   "name": "WeRepair",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

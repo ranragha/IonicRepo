@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Guest</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-searchbar type="text" debounce="500" (ionInput)="onInput($event)"></ion-searchbar>
+  <ion-list *ngIf="isShopAvailable">
+      <ion-item *ngFor="let shop of shops">{{ shop }}</ion-item>
+  </ion-list>
+
+</ion-content>
