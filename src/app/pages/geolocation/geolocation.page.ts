@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder, NativeGeocoderOptions, NativeGeocoderResult } from '@ionic-native/native-geocoder/ngx';
+import { Router } from '@angular/router';
 
 declare var google;
 
@@ -18,7 +19,8 @@ export class GeolocationPage implements OnInit {
   address: string;
 
   constructor(private geolocation: Geolocation,
-    private nativeGeocoder: NativeGeocoder) { }
+    private nativeGeocoder: NativeGeocoder,
+    private router: Router) { }
 
   ngOnInit() {
   }
@@ -79,6 +81,12 @@ export class GeolocationPage implements OnInit {
       .catch((error: any) => {
         this.address = "Address Not Available!";
       });
+
+  }
+
+  updateCoordinates(){
+
+    this.router.navigate(['/add-location']);
 
   }
 

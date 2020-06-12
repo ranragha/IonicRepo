@@ -49,6 +49,10 @@ const routes: Routes = [
   },  {
     path: 'verify-email',
     loadChildren: () => import('./pages/verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
+  },
+  {
+    path: 'add-location',
+    loadChildren: () => import('./pages/add-location/add-location.module').then( m => m.AddLocationPageModule)
   }
 
 ];

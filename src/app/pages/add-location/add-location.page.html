@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add-location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form class="form" [formGroup]="locations_form" (ngSubmit)="addLocation(locations_form.value)" >
+    <ion-item lines="full">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" formControlName="name" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Uid</ion-label>
+      <ion-input type="text" formControlName="uid" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Latitude</ion-label>
+      <ion-input type="text" formControlName="latitude" required></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="full">
+      <ion-label position="floating">Longitude</ion-label>
+      <ion-input type="text" formControlName="longitude" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit"  color="danger" expand="block">Add Location</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+
+</ion-content>

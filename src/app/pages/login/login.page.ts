@@ -10,7 +10,7 @@ import { AuthenticationService } from 'src/app/shared/authentication-service';
 export class LoginPage implements OnInit {
 
   constructor( public authService: AuthenticationService,
-    public router: Router) { }
+    private router: Router) { }
 
   ngOnInit() {
   }
