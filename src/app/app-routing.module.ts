@@ -53,6 +53,10 @@ const routes: Routes = [
   {
     path: 'add-location',
     loadChildren: () => import('./pages/add-location/add-location.module').then( m => m.AddLocationPageModule)
+  },
+  {
+    path: 'google-map',
+    loadChildren: () => import('./pages/google-map/google-map.module').then( m => m.GoogleMapPageModule)
   }
 
 ];

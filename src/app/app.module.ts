@@ -19,6 +19,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AgmCoreModule, MapsAPILoader, GoogleMapsAPIWrapper } from '@agm/core';
 
 
 @NgModule({
@@ -35,6 +36,9 @@ import { CommonModule } from '@angular/common';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAtjSMuXNSHf9PwmFWFV3XitHkSK79FHRQ'
+    })
     
   ],
   providers: [
@@ -45,6 +49,7 @@ import { CommonModule } from '@angular/common';
     Geolocation,
     NativeGeocoder,
     AngularFirestoreModule
+    
   ],
   bootstrap: [AppComponent]
 })

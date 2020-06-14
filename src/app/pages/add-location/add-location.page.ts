@@ -32,7 +32,7 @@ export class AddLocationPage implements OnInit {
     
        this.afs.collection('GeoLocation').add(this.locations_form.value).then(res =>{
          console.log(res)
-      })
+      })     
        .catch(error => {
         console.log(error);
       });

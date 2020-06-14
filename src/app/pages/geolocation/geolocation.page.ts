@@ -90,5 +90,10 @@ export class GeolocationPage implements OnInit {
 
   }
 
+  testNearest() {
+    console.log('testing nearest')
+    this.router.navigate(['/google-map']);
+  }
+
 
 }
