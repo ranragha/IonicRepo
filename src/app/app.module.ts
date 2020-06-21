@@ -20,6 +20,8 @@ import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AgmCoreModule, MapsAPILoader, GoogleMapsAPIWrapper } from '@agm/core';
+//import { WebIntent, WebIntentOriginal } from '@ionic-native/web-intent'
+import { WebIntent } from '@ionic-native/web-intent/ngx'
 
 
 @NgModule({
@@ -48,7 +50,8 @@ import { AgmCoreModule, MapsAPILoader, GoogleMapsAPIWrapper } from '@agm/core';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Geolocation,
     NativeGeocoder,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    WebIntent
     
   ],
   bootstrap: [AppComponent]

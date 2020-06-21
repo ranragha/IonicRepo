@@ -38,6 +38,18 @@ export class AppComponent implements OnInit {
       url: '/camera',
       icon: 'archive'
     },
+
+    {
+      title: 'RazorPay',
+      url: '/razor',
+      icon: 'archive'
+    },
+
+     {
+      title: 'Payment-Gateway',
+      url: '/payment',
+      icon: 'archive'
+    },
     
   ];
   public labels = ['Car', 'Bike', 'Other'];

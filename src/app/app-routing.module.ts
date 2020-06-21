@@ -57,6 +57,14 @@ const routes: Routes = [
   {
     path: 'google-map',
     loadChildren: () => import('./pages/google-map/google-map.module').then( m => m.GoogleMapPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./pages/payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'razor',
+    loadChildren: () => import('./pages/razor/razor.module').then( m => m.RazorPageModule)
   }
 
 ];
